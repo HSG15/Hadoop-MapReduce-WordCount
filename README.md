@@ -1,4 +1,20 @@
 
+# 🧠 Hadoop MapReduce WordCount Project
+
+This is a basic Hadoop MapReduce program to count the occurrences of words in a given input file.  
+The program includes a Mapper, Reducer, and Driver class — all inside a single Java file.
+
+---
+
+## 📂 Project Structure
+
+```
+wordcount/
+├── WordCount.java
+├── wc.jar
+└── output/          ← will be created by Hadoop
+```
+
 ---
 
 ## 🛠️ Run Instructions (Single Copy-Paste Block)
@@ -31,9 +47,27 @@ hadoop jar wc.jar WordCount /user/harishankargiri16/input/dbzinput.txt /user/har
 
 # Step 8: Check results
 hadoop fs -cat /user/harishankargiri16/output_dbz/part-r-00000
+```
 
-# Sample Output
+---
+
+## 📄 Java Code
+
+👉 [`WordCount.java`](https://github.com/HSG15/Hadoop-MapReduce-WordCount-Project/blob/main/WordCount.java)
+
+---
+
+## 🧪 Sample Output
+
+```
 bear    2
 car     3
 dear    4
+```
 
+---
+
+## 👨‍💻 Author
+
+**Harishankar Giri**  
+🔗 [GitHub @HSG15](https://github.com/HSG15)
