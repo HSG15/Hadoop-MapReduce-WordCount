@@ -66,6 +66,26 @@ dear    4
 ```
 
 ---
+## Steps to Execute
+
+| Step | Action               | Command                                                                 |
+|------|----------------------|-------------------------------------------------------------------------|
+| 1    | Create project folder | `mkdir wordcount`                                                       |
+| 2    | Write Java program    | `vi WordCount.java`                                                     |
+| 3    | Compile code          | `javac -cp $(hadoop classpath) WordCount.java`                         |
+| 4    | Package to JAR        | `jar cf wc.jar WordCount*.class`                                       |
+| 5    | Prepare input file    | `vi dbzinput.txt`                                                       |
+| 6    | Upload input to HDFS  | `hadoop fs -put ~/input/dbzinput.txt /user/harishankargiri16/input/`   |
+| 7    | Run MapReduce job     | `hadoop jar wc.jar WordCount /input /output`                           |
+| 8    | Check HDFS output     | `hadoop fs -ls /output_dbz`                                            |
+| 9    | View result           | `hadoop fs -cat /output_dbz/part-r-00000`                              |
+
+## Notes
+- Replace the path `/user/harishankargiri16/` with your actual HDFS username if different.
+- Make sure Hadoop is installed and configured properly before running the steps.
+
+
+---
 
 ## 👨‍💻 Author
 
