@@ -1,5 +1,5 @@
 
-# 🧠 Hadoop MapReduce WordCount Project
+# 🧠 Hadoop MapReduce WordCount
 
 This is a basic Hadoop MapReduce program to count the occurrences of words in a given input file.  
 The program includes a Mapper, Reducer, and Driver class — all inside a single Java file.
