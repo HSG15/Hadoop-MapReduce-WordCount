@@ -64,6 +64,7 @@ bear    2
 car     3
 dear    4
 ```
+<img width="1680" alt="image" src="https://github.com/user-attachments/assets/5126ea5c-74bd-4ec8-8762-1e2b8558b009" />
 
 ---
 ## Steps to Execute
